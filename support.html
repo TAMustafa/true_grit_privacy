@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Pure Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f7;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #1d1d1f;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        h2 {
+            color: #1d1d1f;
+            font-size: 1.5em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        h3 {
+            color: #1d1d1f;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            color: #86868b;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            color: #1d1d1f;
+        }
+        
+        .highlight-box {
+            background-color: #f5f0e8;
+            border-left: 4px solid #8b7355;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 10px;
+        }
+        
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+        
+        .answer {
+            color: #1d1d1f;
+        }
+        
+        strong {
+            color: #1d1d1f;
+            font-weight: 600;
+        }
+        
+        .contact-box {
+            background-color: #f5f0e8;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-box h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .contact-box p {
+            margin-bottom: 10px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .button {
+            display: inline-block;
+            background-color: #8b7355;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .button:hover {
+            background-color: #6d5a42;
+            text-decoration: none;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .feature-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #d2d2d7;
+            text-align: center;
+            color: #86868b;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Support</h1>
+        <p class="subtitle">Pure Grid - Sudoku Puzzle Game</p>
+        
+        <div class="highlight-box">
+            <p><strong>Need help?</strong> Find answers to common questions below, or contact us directly for personalized support.</p>
+        </div>
+        
+        <h2>About Pure Grid</h2>
+        <p>Pure Grid is a beautiful, privacy-focused Sudoku puzzle game designed for iOS. Enjoy classic Sudoku puzzles with a modern, elegant interface and track your progress over time.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>📊 Statistics</h3>
+                <p>Track your game history, best times, and scores</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Themes</h3>
+                <p>Light and dark mode support</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎯 Difficulty Levels</h3>
+                <p>Easy, Medium, Hard, and Expert</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔒 Privacy First</h3>
+                <p>No data collection, works offline</p>
+            </div>
+        </div>
+        
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I play Sudoku?</p>
+            <p class="answer">A: Fill the 9×9 grid so that each row, column, and 3×3 box contains the digits 1-9 without repetition. Tap a cell to select it, then tap a number to fill it in.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I use notes mode?</p>
+            <p class="answer">A: Tap the pencil icon to enable notes mode. In this mode, you can add small numbers to cells as reminders of possible values. Tap the pencil again to return to normal mode.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I use hints?</p>
+            <p class="answer">A: Tap the lightbulb icon to reveal a correct number in the selected cell. Use hints sparingly as they affect your score!</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I change the difficulty level?</p>
+            <p class="answer">A: Tap the settings icon (gear) in the top right corner, then select your preferred difficulty level: Easy, Medium, Hard, or Expert.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I switch between light and dark mode?</p>
+            <p class="answer">A: Go to Settings and tap the theme toggle. Pure Grid supports both light and dark modes to match your preference.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Where are my statistics stored?</p>
+            <p class="answer">A: All your game statistics are stored locally on your device. No data is sent to external servers. Your privacy is our priority.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Can I play offline?</p>
+            <p class="answer">A: Yes! Pure Grid works completely offline. No internet connection is required to play or access your statistics.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How do I clear my statistics?</p>
+            <p class="answer">A: Go to Settings → Statistics → Clear All Statistics. This will permanently delete all your game history. You can also delete the app to remove all data.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: What happens if I make a mistake?</p>
+            <p class="answer">A: If auto-check is enabled (Settings), incorrect numbers will be highlighted in red. You can tap the cell again and choose a different number. Mistakes are tracked in your game statistics.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Can I pause a game?</p>
+            <p class="answer">A: Yes! Tap the pause button or simply close the app. Your game progress is automatically saved, and you can resume anytime.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: How is my score calculated?</p>
+            <p class="answer">A: Your score is based on completion time, number of mistakes, and hints used. Faster times with fewer mistakes and no hints result in higher scores.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Does Pure Grid collect my personal data?</p>
+            <p class="answer">A: No. Pure Grid does not collect any personal data. All game information stays on your device. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Is Pure Grid suitable for children?</p>
+            <p class="answer">A: Yes! Pure Grid is safe for all ages. There are no ads, no in-app purchases, and no data collection.</p>
+        </div>
+        
+        <div class="faq-item">
+            <p class="question">Q: Can I generate unlimited puzzles?</p>
+            <p class="answer">A: Yes! Tap "New Game" to generate a fresh puzzle anytime. Each puzzle is randomly generated and unique.</p>
+        </div>
+        
+        <h2>Troubleshooting</h2>
+        
+        <h3>App crashes or freezes</h3>
+        <ol>
+            <li>Close the app completely and reopen it</li>
+            <li>Restart your device</li>
+            <li>Ensure you have the latest version of Pure Grid from the App Store</li>
+            <li>If the issue persists, contact support</li>
+        </ol>
+        
+        <h3>Statistics not saving</h3>
+        <ol>
+            <li>Ensure you complete the puzzle (fill all cells correctly)</li>
+            <li>Check that you have sufficient storage space on your device</li>
+            <li>Try clearing and restarting the app</li>
+        </ol>
+        
+        <h3>Sound effects not playing</h3>
+        <ol>
+            <li>Check that your device is not in silent mode</li>
+            <li>Verify that sound effects are enabled in Settings</li>
+            <li>Check your device's volume settings</li>
+        </ol>
+        
+        <h3>Theme not changing</h3>
+        <ol>
+            <li>Go to Settings and toggle the theme switch</li>
+            <li>Close and reopen the app</li>
+            <li>If using system theme, check your device's appearance settings</li>
+        </ol>
+        
+        <h2>Feature Requests</h2>
+        <p>We're always looking to improve Pure Grid! If you have ideas for new features or improvements, we'd love to hear from you. Send us your suggestions via email.</p>
+        
+        <h2>Report a Bug</h2>
+        <p>Found a bug? Please help us fix it by providing:</p>
+        <ul>
+            <li>A description of the issue</li>
+            <li>Steps to reproduce the problem</li>
+            <li>Your device model and iOS version</li>
+            <li>Screenshots (if applicable)</li>
+        </ul>
+        
+        <div class="contact-box">
+            <h2>Still Need Help?</h2>
+            <p>Can't find the answer you're looking for?</p>
+            <p>Contact us and we'll get back to you as soon as possible.</p>
+            <a href="mailto:tareksnews@gmail.com" class="button">Contact Support</a>
+        </div>
+        
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>Platform:</strong> iOS</li>
+            <li><strong>Minimum iOS Version:</strong> iOS 13.0 or later</li>
+            <li><strong>Devices:</strong> iPhone, iPad</li>
+            <li><strong>Storage:</strong> Approximately 50 MB</li>
+            <li><strong>Internet:</strong> Not required (works offline)</li>
+        </ul>
+        
+        <h2>Version Information</h2>
+        <p><strong>Current Version:</strong> 1.0.3</p>
+        <p><strong>Last Updated:</strong> October 2025</p>
+        
+        <h2>Additional Resources</h2>
+        <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="https://apps.apple.com/app/pure-grid/idXXXXXXXXXX">Download on the App Store</a></li>
+        </ul>
+        
+        <div class="footer">
+            <p>&copy; 2025 Pure Grid. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="support.html">Support</a></p>
+        </div>
+    </div>
+</body>
+</html>
